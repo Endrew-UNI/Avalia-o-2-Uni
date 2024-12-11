@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNEMAT-SI Notícias de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="modo-claro">  
+    <div class="header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </a>
+        <!-- Buttons -->   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="news.html">Notícias</a></li>
+            <li><a href="offers.html">Ofertas</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
+        <!-- Mode switch --> 
+        <label style="float:right" class="switch">
+            <input type="checkbox" id="modoSwitch" onchange="alternarModo()">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <main>
+        <div class="article-container">
+            <!-- Coluna do artigo -->
+            <div class="article">
+                <h2 class="article-title">Gamers passam mais tempo assistindo a games do que jogando, aponta pesquisa</h2>
+                
+                <!-- Container para a imagem -->
+                <div class="article-img-container">
+                    <img src="img/news/n1.png" alt="Imagem ilustrativa sobre gamers" class="article-img">
+                    <p class="image-credit">Créditos: Freepik</p>  <!-- Crédito da imagem -->
+                </div>
+                
+                <!-- Texto do artigo -->
+                <div class="article-text">
+                    <p>Último relatório da MIDiA Research concluiu que os gamers passam mais tempo assistindo a vídeos em plataformas como Twitch e YouTube do que jogando. Os dados indicam que os gamers agora passam mais tempo assistindo a vídeos, com uma média de 8,5 horas por semana assistindo a vídeos contra 7,4 horas jogando.</p>
+                    <p>A pesquisa também menciona que há um “potencial inexplorado” para que os publicadores de jogos integrem conteúdo de vídeo de seus ecossistemas em plataformas de terceiros, como Twitch e YouTube.</p>
+            </div>
+        </div>
+       <!-- Main content grid -->
+       <div class="container">
+        <div class="content-grid">
+            <!-- News Section -->
+            <div class="news-grid">
+                <h4>Leia também:</h4>
+                <div class="card">
+                    <a href="https://www.adrenaline.com.br/intel/intel-anuncia-as-placas-de-video-arc-b580-e-b570-mais-rapidas-que-rtx-4060-e-custando-menos/" class="card-link">
+                        <img src="img/news/noticia4.png" alt="CADÊ A FOTO" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Novas GPUs ARC no mercado</h2>
+                            <p class="card-text">Intel anuncia as placas de vídeo ARC B580 e B570, mais rápidas que RTX 4060 e custando menos.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.adrenaline.com.br/hardware/guia-de-processadores-atualizado-segundo-semestre-2024/" class="card-link">
+                        <img src="img/news/noticia2.png" alt="CADÊ A FOTO" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Qual a melhor CPU?</h2>
+                            <p class="card-text">Guia de Processadores ATUALIZADO - Segundo Semestre 2024.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.adrenaline.com.br/games/nintendo/jogos-do-nintendo-switch-2-devem-usar-dlss-mas-nem-sempre-para-exibicao-em-4k/" class="card-link">
+                        <img src="img/news/noticia3.png" alt="CADÊ A FOTO" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Pode ser 1440p</h2>
+                            <p class="card-text">Jogos do Nintendo Switch 2 devem usar DLSS, mas nem sempre para exibição em 4K </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

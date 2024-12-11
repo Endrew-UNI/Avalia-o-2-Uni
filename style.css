@@ -1,0 +1,440 @@
+/* LOGO */
+.header {
+  justify-content: center;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: 250px;
+}
+/* BARRA DE CIMA */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #004cc7;
+}
+
+/* CORPO */
+.body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+  margin: 0;
+}
+/* CLARO */
+.modo-claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ESCURO */
+.modo-escuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* SLIDER */
+.switch {
+  position: relative;
+  top: -40px;
+  right: 80px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* SLIDER ESCURO */
+input:checked + .slider {
+  background-color: #004cc7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider:hover {
+  background-color: #004cc7;
+}
+p1{
+  font-weight: bold;
+  font-size: 30px;
+}
+p3{
+  font-weight: bold;
+  font-size: 35px;
+}
+/* RODAPÉ */
+.footer {
+  text-align: center;
+  color: white;
+  background: #333;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  }
+/* CONTAINER GRID NOTICIA */
+.container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  width: 100%;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #2779ff;
+}
+
+.card-text {
+  font-size: 16px;
+  color: white;
+  margin: 10px 0;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+/* OFERTAS */
+.offers-section {
+  width: 100%;
+  text-align: center;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Até 4 ofertas em linha */
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.offers-grid .card {
+  max-width: 300px;
+}
+
+.offers-grid p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #004cc7;
+  text-align: center;
+  border-radius: 10px;
+}
+/* NOTICIA */
+/* Container da imagem e créditos */
+.article-img-container {
+  text-align: left;  /* Alinha a imagem e o crédito à esquerda */
+  margin-bottom: 30px; /* Espaço abaixo da imagem */
+}
+.article-title {
+  font-size: 40px;  /* Aumentei o tamanho da fonte do título */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Imagem do artigo */
+.article-img {
+  width: 50%;  /* A imagem ocupará 50% da largura da tela */
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 0;   /* Remove o espaço à esquerda */
+  margin-right: 10px;  /* Espaço à direita da imagem */
+  margin-bottom: 10px;  /* Espaço abaixo da imagem */
+}
+
+/* Crédito da imagem */
+.image-credit {
+  font-size: 16px;
+  text-align: left; /* Alinha o crédito à esquerda */
+  margin-top: 10px;
+  margin-bottom: 20px; /* Espaço entre os créditos e o texto */
+}
+
+/* Texto do artigo */
+.article-text {
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+  width: 90%;  /* Texto ocupa 70% da largura */
+  margin-left: 10px; /* Espaço à esquerda do texto */
+  margin-right: 10px; /* Espaço à direita do texto */
+}
+/* Container principal para o artigo e ofertas */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Coluna do artigo */
+.article {
+  flex: 0 0 70%;  /* 70% da largura disponível */
+  margin-right: 20px;
+}
+
+/* Estilo do título do artigo */
+.article-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container da imagem e créditos */
+.article-img-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Imagem do artigo */
+.article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Crédito da imagem */
+.image-credit {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Texto do artigo */
+.article-text {
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.h4 {
+  font-weight: bold;
+}
+/* Estilo para a página About */
+.about-section {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #004cc7;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #004cc7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #003bb5;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1200px) {
+  .offers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+/*celular*/
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr); /* Exibe até 3 notícias em telas menores */
+  }
+
+  .header ul {
+    text-align: left;
+    margin: 10px;
+  }
+
+  .switch {
+    position: static;
+    margin: 10px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 180px; 
+  }
+
+  .card-title {
+    font-size: 18px; 
+  }
+
+  .card-text {
+    font-size: 14px; 
+  }
+}
+@media (max-width: 768px) {
+  .switch {
+    position: absolute;
+    top: 20px;  
+    right: 10px; 
+  }
+
+  .about-section {
+    width: 90%;
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  /* Oculta o slider */
+  .switch {
+    display: none;
+  }
+}
